@@ -1,4 +1,4 @@
-package com.example.mentorshipAppBackend;
+package com.mentorshipAppBackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
