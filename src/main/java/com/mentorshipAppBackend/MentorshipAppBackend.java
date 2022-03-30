@@ -16,7 +16,9 @@ public class MentorshipAppBackend {
 	@Bean
 	CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate) {
 		return args -> {
-			kafkaTemplate.send("mentorshipApp", "hello kafka");
+			for (int i = 0; i < 100; i++) {
+				kafkaTemplate.send("mentorshipApp", "hello kafka <3 " + i);
+			}
 		};
 	}
 }
