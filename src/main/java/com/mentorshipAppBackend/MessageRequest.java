@@ -1,5 +1,5 @@
 package com.mentorshipAppBackend;
 
-public record MessageRequest() {
+public record MessageRequest(String message) {
 
 }
